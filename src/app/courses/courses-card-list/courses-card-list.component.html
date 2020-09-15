@@ -1,0 +1,16 @@
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-sm-4" *ngFor="let item of courses">
+      <div class="card mb-3" style="width: 18rem;">
+        <img [src]="item.iconUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{item.url}}</h5>
+          <p class="card-text">{{item.category}}</p>
+          <p class="card-text">{{item.longDescription}}</p>
+          <a href="#" class="btn btn-danger mr-3">Review</a>
+          <a href="#" class="btn btn-info">Edit</a>
+        </div>
+      </div>
+    </div>
+  </div>

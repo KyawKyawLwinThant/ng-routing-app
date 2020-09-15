@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="text-center">
+
+    <ul class="nav justify-content-center">
+      <li class="nav-item my-5">
+        <a href="#beginner" class="nav-link mr-4" data-toggle="tab">Beginner</a>
+      </li>
+      <li class="nav-item my-5">
+        <a href="#advanced" class="nav-link"  data-toggle="tab">Advanced</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <div class="tab-content">
+    <div role="tab" class="tab-pane mt-5 mr-5" id="beginner">
+      <app-courses-card-list [courses]="beginnerCourses"></app-courses-card-list>
+    </div>
+    <div role="tab" class="tab-pane mt-5" id="advanced">
+      <app-courses-card-list [courses]="advancedCourses"></app-courses-card-list>
+    </div>
+  </div>
+</div>
+
